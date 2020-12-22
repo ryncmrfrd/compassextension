@@ -1,0 +1,49 @@
+:root{
+    --blue: #1287fa;
+	--darkblue: #162a4c;
+    --yellow: #ffb400;
+}
+
+/* ---------- general ---------- */
+
+html, 
+body, 
+form{
+    background: white;
+}
+
+#c_bar{
+    margin-top: 16px !important;
+
+    border: none !important;
+}
+
+/* ---------- news feed ---------- */
+
+
+
+/* ---------- "show more" button ---------- */
+
+#c_bar #panel-1068-body{
+	border: none;
+	border-radius: 20px;
+}
+
+#c_bar #panel-1068-body * {
+    color: var(--darkblue);
+
+	background: var(--yellow);
+
+    transition: all 200ms ease;
+}
+
+
+#c_bar #panel-1068-body:hover * {
+	color: white !important;
+
+	background:  var(--darkblue);
+}
+
+#c_bar #panel-1068-body a:hover{
+    text-decoration: none;
+}
