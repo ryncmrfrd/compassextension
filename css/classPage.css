@@ -1,0 +1,31 @@
+:root{
+    --blue: #1287fa;
+	--darkblue: #162a4c;
+    --yellow: #ffb400;
+}
+
+/* ---------- forward/backward buttons ---------- */
+
+#CompassManagersActivityDefaultManager-body a#button-1067,
+#CompassManagersActivityDefaultManager-body a#button-1068{
+	height: 30px;
+	width: 30px;
+	
+	border: none !important;
+	border-radius: 50%;
+
+	background: var(--yellow);
+
+	transition: all 200ms ease;
+
+	cursor: pointer;
+}
+
+#CompassManagersActivityDefaultManager-body a#button-1067:hover,
+#CompassManagersActivityDefaultManager-body a#button-1068:hover{
+	background: var(--darkblue);
+}
+
+#button-1067-btnEl, #button-1068-btnEl{
+
+}

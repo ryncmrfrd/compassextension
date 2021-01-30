@@ -15,7 +15,9 @@
 				"./fontawesome/css/all.css",
 				"./css/topBlueBar.css",
 				"./css/centerContent.css",
-				"./css/bottomFooter.css"
+				"./css/bottomFooter.css",
+
+				"./css/classPage.css"
 			]
         }
     ]

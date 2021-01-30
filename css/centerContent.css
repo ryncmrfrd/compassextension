@@ -12,15 +12,24 @@ form{
     background: white;
 }
 
-#c_bar{
-    margin-top: 16px !important;
+#c_bar, #calendarsideview-1010, #calendarmanagerwidget-1013{
+	margin-top: 16px !important;
+}
 
+#c_bar{
     border: none !important;
 }
 
 /* ---------- news feed ---------- */
 
+#component-1079{
+	height: 93px;
+}
 
+#component-1079 > div{
+	top: calc((93px - 45px) / 2);
+}
+	
 
 /* ---------- "show more" button ---------- */
 
