@@ -2,14 +2,14 @@ console.log("Loaded :)")
 
 // add "made by tag"
 
-let elem = document.createElement("div");
-elem.classList.add("custom_tag");
-elem.innerHTML = "<span>Custom stylesheet: </span><a href='https://ryncmrfrd.com'>Ryan Comerford</a>"
+// let elem = document.createElement("div");
+// elem.classList.add("custom_tag");
+// elem.innerHTML = "<span>Custom stylesheet: </span><a href='https://ryncmrfrd.com'>Ryan Comerford</a>"
 
-let footer = document.querySelector("#c_ftr");
-if(footer){
-	footer.appendChild(elem);
-}
+// let footer = document.querySelector("#c_ftr");
+// if(footer){
+// 	footer.appendChild(elem);
+// }
 
 // fontawesome (icon replace)
 
@@ -60,7 +60,18 @@ if(menuSprites[7]){
 	menuSprites[7].classList.remove("menu-sprite-gear");
 }
 
-// content chaanges
+// back/forward button icons
+
+if(window.location.pathname === "/Organise/Activities/Activity.aspx"){
+	let buttonSprites = document.querySelectorAll("#button-1067-btnEl, #button-1068-btnEl");
+
+	buttonSprites.forEach(elem => elem.classList.add("fas"));
+	
+	if(buttonSprites[0]) buttonSprites[0].innerHTML = ""; buttonSprites[0].classList.add("fa-arrow-left");
+	if(buttonSprites[1]) buttonSprites[1].innerHTML = ""; buttonSprites[1].classList.add("fa-arrow-right");	
+}
+
+// content changes
 
 let seeMoreButtonText = document.querySelector("div#panel-1068-body span div div a");
 if(seeMoreButtonText) seeMoreButtonText.innerText = "See More";

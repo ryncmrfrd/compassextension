@@ -6,6 +6,10 @@
 
 /* ---------- general ---------- */
 
+body{
+	background: white !important;
+}
+
 #c_ftr{
 	position: relative;
 

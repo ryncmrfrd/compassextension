@@ -4,16 +4,52 @@
     --yellow: #ffb400;
 }
 
+/* */
+.x-toolbar-default#toolbar-1065{
+	margin-top: 15px;
+	padding: 0 !important; 
+
+	border: none !important;
+
+	background-color: transparent;
+}
+
+#activityComboBox{
+	padding-left: 0 !important;
+}
+
+#activityComboBox #activityComboBox-inputEl{
+	padding-left: 0 !important;
+
+	outline: none;
+	border: none;
+
+	font-size: 16px !important;
+
+	color: black;
+	background-color: transparent;
+
+	text-align: center;
+	text-decoration: underline;
+}
+
+#activityComboBox #ext-gen1355{
+	display: none;
+}
+
 /* ---------- forward/backward buttons ---------- */
 
 #CompassManagersActivityDefaultManager-body a#button-1067,
 #CompassManagersActivityDefaultManager-body a#button-1068{
+	position: relative;
+
 	height: 30px;
 	width: 30px;
 	
 	border: none !important;
 	border-radius: 50%;
 
+	color: var(--darkblue);
 	background: var(--yellow);
 
 	transition: all 200ms ease;
@@ -23,9 +59,55 @@
 
 #CompassManagersActivityDefaultManager-body a#button-1067:hover,
 #CompassManagersActivityDefaultManager-body a#button-1068:hover{
+	color: white;
 	background: var(--darkblue);
 }
 
 #button-1067-btnEl, #button-1068-btnEl{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+    transform: translate(-50% , -50%);
 
+	color: inherit !important;
+
+	font-size: 1.5em;
 }
+
+/*  */
+
+#container-1059{
+	left: 0 !important;
+	width: 958px !important;
+
+	overflow: visible;
+}
+
+#container-1059 #container-1059-targetEl > div,
+#container-1059 #container-1059-targetEl > div #container-1034-innerCt,
+#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl{ 
+	overflow: visible;
+ }
+
+/* widths */
+#container-1059 #container-1059-innerCt,
+#container-1059 #container-1059-targetEl, 
+#container-1059 #container-1059-targetEl > div,
+#container-1059 #container-1059-targetEl > div #container-1034-innerCt,
+#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl{ width: 100% !important }
+#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel{ 
+	width: calc(50% - 20px) !important;
+
+	border-radius: 5px;
+
+	box-shadow: 0 4px 8px 0 #00000071;
+}
+#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel:nth-of-type(1){ left: 10px !important }
+#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel:nth-of-type(2){ left: calc(50% + 10px) !important }
+#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel > div,
+#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel > div > div,
+#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel > div > div > div,
+#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel > div > div > div > div,
+#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel > div > div > div > div > div,
+#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel > div > div > div > div > div > div{ width: 100% !important; border: none !important; outline: none !important }
