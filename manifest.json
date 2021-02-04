@@ -5,19 +5,22 @@
     "manifest_version": 2,
     "content_scripts": [
         {
-			"matches": [
-				"https://*.compass.education/*"
-			],
-			"js": [
-				"script.js"
-			],
+			"matches": [ "https://*.compass.education/*" ],
 			"css": [
 				"./fontawesome/css/all.css",
 				"./css/topBlueBar.css",
 				"./css/centerContent.css",
 				"./css/bottomFooter.css",
 				"./css/classPage.css"
-			]
+			],
+			"js": [ "script.js" ]
         }
-    ]
+	],
+	"web_accessible_resources": [
+		"./fontawesome/css/all.css",
+		"./css/topBlueBar.css",
+		"./css/centerContent.css",
+		"./css/bottomFooter.css",
+		"./css/classPage.css"
+	]
 }
