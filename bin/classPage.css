@@ -1,26 +1,26 @@
 :root{
-    --blue: #1287fa;
-	--darkblue: #162a4c;
-    --yellow: #ffb400;
+    --blue: #1287fa !important;
+	--darkblue: #162a4c !important;
+    --yellow: #ffb400 !important;
 }
 
 /* */
 
 .x-toolbar-default#toolbar-1065{
-	margin-top: 20px;
+	margin-top: 20px !important;
 	padding: 0 !important; 
 
-	height: 30px;
+	height: 30px !important;
 
 	border: none !important;
 
-	background-color: transparent;
+	background-color: transparent !important;
 
-	overflow: visible;
+	overflow: visible !important;
 }
 
 .x-toolbar-default#toolbar-1065 > #toolbar-1065-innerCt{
-	position: initial;
+	position: initial !important;
 }
 
 .x-toolbar-default#toolbar-1065 *{
@@ -30,26 +30,26 @@
 #activityComboBox{
 	padding-left: 0 !important;
 
-	margin-top: 20px;
+	margin-top: 20px !important;
 }
 
 #activityComboBox #activityComboBox-inputEl{
 	padding-left: 0 !important;
 
-	outline: none;
-	border: none;
+	outline: none !important;
+	border: none !important;
 
 	font-size: 16px !important;
 
-	color: black;
-	background-color: transparent;
+	color: black !important;
+	background-color: transparent !important;
 
-	text-align: center;
-	text-decoration: underline;
+	text-align: center !important;
+	text-decoration: underline !important;
 }
 
 #activityComboBox #ext-gen1355{
-	display: none;
+	display: none !important;
 }
 
 /* ---------- forward/backward buttons ---------- */
@@ -60,19 +60,19 @@
 	margin-top: 15px !important;
 
 	height: 40px !important;
-	width: 40px;
+	width: 40px !important;
 
-	z-index: 999;
+	z-index: 999 !important;
 
 	border: none !important;
-	border-radius: 50%;
+	border-radius: 50% !important;
 
-	color: var(--darkblue);
-	background: var(--yellow);
+	color: var(--darkblue) !important;
+	background: var(--yellow) !important;
 
-	transition: all 200ms ease;
+	transition: all 200ms ease !important;
 
-	cursor: pointer;
+	cursor: pointer !important;
 }
 
 #CompassManagersActivityDefaultManager-body a#button-1067 span span,
@@ -82,20 +82,20 @@
 
 #CompassManagersActivityDefaultManager-body a#button-1067:hover,
 #CompassManagersActivityDefaultManager-body a#button-1068:hover{
-	color: white;
-	background: var(--darkblue);
+	color: white !important;
+	background: var(--darkblue) !important;
 }
 
 #button-1067-btnEl, #button-1068-btnEl{
-	position: absolute;
-	top: 50%;
-	left: 50%;
+	position: absolute !important;
+	top: 50% !important;
+	left: 50% !important;
 	
-    transform: translate(-50% , -50%);
+    transform: translate(-50% , -50%) !important;
 
 	color: inherit !important;
 
-	font-size: 1.5em;
+	font-size: 1.5em !important;
 }
 
 /*  */
@@ -104,13 +104,13 @@
 	left: 0 !important;
 	width: 958px !important;
 
-	overflow: visible;
+	overflow: visible !important;
 }
 
 #container-1059 #container-1059-targetEl > div,
 #container-1059 #container-1059-targetEl > div #container-1034-innerCt,
 #container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl{ 
-	overflow: visible;
+	overflow: visible !important;
  }
 
 /* widths */
@@ -122,9 +122,9 @@
 #container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel{ 
 	width: calc(50% - 20px) !important;
 
-	border-radius: 5px;
+	border-radius: 5px !important;
 
-	box-shadow: 0 4px 8px 0 #00000071;
+	box-shadow: 0 4px 8px 0 #00000071 !important;
 }
 #container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel:nth-of-type(1){ left: 10px !important }
 #container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel:nth-of-type(2){ left: calc(50% + 10px) !important }
@@ -138,7 +138,7 @@
 /* */
 
 #container-1272-innerCt > img{
-	border-radius: 5px;
+	border-radius: 5px !important;
 
 	height: 55px !important;
 	width: 43px !important
@@ -147,5 +147,5 @@
 /**/
 
 #container-1280-innerCt > div span{
-	margin-left: auto
+	margin-left: auto !important
 }

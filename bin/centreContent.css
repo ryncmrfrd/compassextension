@@ -1,0 +1,58 @@
+:root{
+    --blue: #1287fa !important;
+	--darkblue: #162a4c !important;
+    --yellow: #ffb400 !important;
+}
+
+/* ---------- general ---------- */
+
+html, 
+body, 
+form{
+    background: white !important;
+}
+
+#c_bar, #calendarsideview-1010, #calendarmanagerwidget-1013{
+	margin-top: 16px !important;
+}
+
+#c_bar{
+    border: none !important;
+}
+
+/* ---------- news feed ---------- */
+
+#component-1085{
+	height: 93px !important;
+}
+
+#component-1085 > div{
+	top: calc((93px - 45px) / 2) !important;
+}
+	
+
+/* ---------- "show more" button ---------- */
+
+#c_bar #panel-1072-body{
+	border: none !important;
+	border-radius: 20px !important;
+}
+
+#c_bar #panel-1072-body * {
+    color: var(--darkblue) !important;
+
+	background: var(--yellow) !important;
+
+    transition: all 200ms ease !important;
+}
+
+
+#c_bar #panel-1072-body:hover * {
+	color: white !important;
+
+	background:  var(--darkblue) !important;
+}
+
+#c_bar #panel-1072-body a:hover{
+    text-decoration: none !important;
+}

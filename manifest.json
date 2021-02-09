@@ -1,26 +1,36 @@
 {
     "name": "compass redesign",
-    "version": "1.0",
-    "description": "",
+    "version": "2.0",
+    "description": "version 2s",
     "manifest_version": 2,
     "content_scripts": [
-        {
-			"matches": [ "https://*.compass.education/*" ],
-			"css": [
-				"./fontawesome/css/all.css",
-				"./css/topBlueBar.css",
-				"./css/centerContent.css",
-				"./css/bottomFooter.css",
-				"./css/classPage.css"
-			],
-			"js": [ "script.js" ]
-        }
-	],
-	"web_accessible_resources": [
-		"./fontawesome/css/all.css",
-		"./css/topBlueBar.css",
-		"./css/centerContent.css",
-		"./css/bottomFooter.css",
-		"./css/classPage.css"
+
+		{
+			"matches": ["https://*.compass.education/*"],
+			"css": ["./fontawesome/css/all.css"]
+		},
+
+		{
+			"matches": ["https://*.compass.education/*"],
+			"js":  ["./bin/topBlueBar.js"],
+			"css": ["./bin/topBlueBar.css"]
+		},
+
+		{
+			"matches": ["https://*.compass.education/"],
+			"css": ["./bin/centreContent.css"],
+			"js":  ["./bin/centreContent.js"]
+		},
+
+		{
+			"matches": ["https://*.compass.education/Organise/Activities/Activity.aspx"],
+			"css": ["./bin/classPage.css"],
+			"js":  ["./bin/classPage.js"]
+		},
+
+		{
+			"matches": ["https://*.compass.education/*"],
+			"css":  ["./bin/bottomFooter.css"]
+		}
 	]
 }
