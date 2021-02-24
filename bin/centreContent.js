@@ -3,4 +3,5 @@
 */
 
 // tweaked see more button
-document.querySelector("div#panel-1072-innerCt div a").innerText = "See More";
+let btnmore = document.querySelector("div#panel-1072-innerCt div a");
+btnmore ? btnmore.innerText = "See More" : "";

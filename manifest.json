@@ -23,7 +23,7 @@
 		},
 
 		{
-			"matches": ["https://*.compass.education/Organise/Activities/Activity.aspx"],
+			"matches": ["https://*.compass.education/Organise/Activities/Activity*"],
 			"css": ["./bin/classPage.css"],
 			"js":  ["./bin/classPage.js"]
 		},
