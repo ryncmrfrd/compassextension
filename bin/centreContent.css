@@ -46,6 +46,7 @@ form{
     transition: all 200ms ease !important;
 }
 
+/*----- "calendar"----- */
 
 #c_bar #panel-1072-body:hover * {
 	color: white !important;
@@ -57,23 +58,54 @@ form{
     text-decoration: none !important;
 }
 
-#calendardaywidget-1013-day-bd-day-col-20210224 div
-	{border-radius: 10px !important
+#calendardaywidget-1013-day-bd-day-col-20210224 div{
+	border-radius: 0px 10px 10px 0px !important;
+	
 }
 
-#calendardaywidget-1013-day-bd-day-col-20210224 div span
-	{text-align:center !important
+#calendardaywidget-1013-day-bd-day-col-20210224 div span{
+	text-align:center !important
 }
 
-#calendardaywidget-1013-body 
-	{border-radius: 0px 0px 20px 20px !important
+#calendardaywidget-1013-body{
+	border-radius: 0px 0px 20px 20px !important
 }
 
-#toolbar-1014 
-	{border-radius: 10px 10px 0px 0px !important;
+#toolbar-1014{
+	border-radius: 10px 10px 0px 0px !important;
 	background-color: var(--blue) !important;
 	color: white !important;
 	font-family: Cabin, "Segoe UI", sans-serif !important;
 	font-weight: normal !important;
+	border: none;
+}
+#ext-gen1498{
+	width: 341px;
+	max-width: 341px;
+}
 
+#calendardaywidget-1013-day-hd-day-20210224{
+	background-color: var(--yellow)!important;
+	width: 100% !important;
+}
+
+/*-----"my tasks"-----*/
+
+#toolbar-1035{
+	border-radius: 10px 10px 0px 0px !important;
+}
+	
+
+#panel-1038-body{
+	border-radius: 0px 0px 10px 10px !important;
+}
+
+/*-----"looking ahead"-----*/
+
+#toolbar-1065{
+	border-radius: 10px !important;
+}
+
+#ext-comp-1236{
+	padding: 0px !important;
 }
