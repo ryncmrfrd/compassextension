@@ -56,3 +56,24 @@ form{
 #c_bar #panel-1072-body a:hover{
     text-decoration: none !important;
 }
+
+#calendardaywidget-1013-day-bd-day-col-20210224 div
+	{border-radius: 10px !important
+}
+
+#calendardaywidget-1013-day-bd-day-col-20210224 div span
+	{text-align:center !important
+}
+
+#calendardaywidget-1013-body 
+	{border-radius: 0px 0px 20px 20px !important
+}
+
+#toolbar-1014 
+	{border-radius: 10px 10px 0px 0px !important;
+	background-color: var(--blue) !important;
+	color: white !important;
+	font-family: Cabin, "Segoe UI", sans-serif !important;
+	font-weight: normal !important;
+
+}
