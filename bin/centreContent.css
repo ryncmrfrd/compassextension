@@ -135,7 +135,6 @@ form{
 #label-1084 h5{
 	font-family: Cabin, "Segoe UI", sans-serif !important;
 	color: var(--darkblue) !important;
-	padding-left: calc((370px - 45px) / 2) !important;
 	font-size: 15px !important; 
 }
 /* ---------- SHOW MORE BUTTON ---------- */
