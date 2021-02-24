@@ -101,11 +101,19 @@ form{
 /*----- LOOKING AHEAD -----*/
 
 #toolbar-1065{
-	border-radius: 10px !important;
+	border-radius: 10px 10px 0px 0px !important;
 }
 
 #ext-comp-1236{
 	padding: 0px !important;
+}
+#ext-comp-1052{
+	border: 1px solid#aeb6be;
+	margin: 0px !important;
+}
+
+#ext-comp-1095{
+	padding: 0px 0px 13px 0px !important;
 }
 
 /* ---------- NEWS FEED ---------- */
@@ -118,6 +126,18 @@ form{
 	top: calc((93px - 45px) / 2) !important;
 }
 
+#ext-comp-1083{
+	border-radius: 10px !important;
+	
+	
+}
+
+#label-1084 h5{
+	font-family: Cabin, "Segoe UI", sans-serif !important;
+	color: var(--darkblue) !important;
+	padding-left: calc((370px - 45px) / 2) !important;
+	font-size: 15px !important; 
+}
 /* ---------- SHOW MORE BUTTON ---------- */
 
 #c_bar #panel-1072-body{
