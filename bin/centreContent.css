@@ -182,6 +182,7 @@ td.ext-cal-ev div.ext-cal-evt{
 #component-1089 img{
 	height: 93px;
 	width: 76px;
+	font-size: 15px !important; 
 }
 
 /* ---------- SHOW MORE BUTTON ---------- */
