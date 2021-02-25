@@ -15,3 +15,12 @@ calendarBtns.forEach((elem, i) => {
 	elem.classList.add(...["fas", calendarBtnClasses[i]]);
 	elem.innerHTML = '';
 });
+
+//change school logo to higher res version
+document.querySelector("#component-1089 img").src = "/Download/Cdn/LoginPageLogo/161331433355.jpg"
+
+//change looking ahead header background colour
+document.querySelector("#toolbar-1065").style.backgroundColor = "#1287fa"
+
+//change bg colour of "my news" title
+document.querySelector("#ext-comp-1083").setAttribute('style', 'background-color: rgb(255, 255, 255) !important');
