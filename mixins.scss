@@ -1,0 +1,36 @@
+@mixin accent-btn($has-icon) {
+  all: unset;
+  
+  height: 26px;
+
+  padding: 5px;
+
+  border: none !important;
+	border-radius: 20px !important;
+
+  transition: all 200ms ease !important;
+
+  color: $white;
+  background: $cmps-blue;
+
+  &:hover{
+    color: $cmps-darkblue;
+    background: $cmps-yellow;
+  }
+
+  @if($has-icon){
+    
+    & > a{
+      float: left;
+      margin: 4px 7.5px 4px 0 !important;
+    }
+
+  }
+
+  .cock{
+    @include accent-btn(true);
+
+    height: 100000px
+  }
+
+}
