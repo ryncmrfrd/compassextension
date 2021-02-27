@@ -1,36 +1,32 @@
 {
-    "name": "compass redesign",
-    "version": "2.0",
-    "description": "version 2s",
-    "manifest_version": 2,
+	"manifest_version": 3,
+    "name": "Compass Education Redesign",
+	"short_name": "Compass",
+	"description": "Injected CSS code for compass.education. Very much a work in progress.",
+	"homepage_url": "http://github.com/ryncmrfrd/compass",
+    "version": "1.0",
+
     "content_scripts": [
-
 		{
 			"matches": ["https://*.compass.education/*"],
-			"css": ["./fontawesome/css/all.css"]
-		},
-
-		{
-			"matches": ["https://*.compass.education/*"],
-			"js":  ["./bin/topBlueBar.js"],
-			"css": ["./bin/topBlueBar.css"]
+			"css": [
+				"./icons/css/all.css",
+				"./bin/css/navbar.css",
+				"./bin/css/footer.css"
+			],
+			"js":  ["./bin/js/navbar.js"]
 		},
 
 		{
 			"matches": ["https://*.compass.education/"],
-			"css": ["./bin/centreContent.css"],
-			"js":  ["./bin/centreContent.js"]
+			"css": ["./bin/css/home.css"],
+			"js":  ["./bin/js/home.js"]
 		},
 
 		{
 			"matches": ["https://*.compass.education/Organise/Activities/Activity*"],
-			"css": ["./bin/classPage.css"],
-			"js":  ["./bin/classPage.js"]
-		},
-
-		{
-			"matches": ["https://*.compass.education/*"],
-			"css":  ["./bin/bottomFooter.css"]
+			"css": ["./bin/css/class.css"],
+			"js":  ["./bin/js/class.js"]
 		}
 	]
 }
