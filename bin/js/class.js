@@ -15,12 +15,13 @@ if (iconElemsNav){
 
 // room details icons
 let iconsArrayRoom = ["fa-chalkboard-teacher", "fa-lightbulb", "fa-volume-up","fa-chalkboard", "fa-tv", "fa-compact-disc", "fa-tint", "fa-burn", "fa-thermometer-full", "fa-fan", "fa-wheelchair", "fa-deaf"],
-	iconElemsRoom = document.querySelectorAll("#container-1285-targetEl div");
+	iconElemsRoom = document.querySelectorAll("#container-1287-targetEl div");
     
 if(iconElemsRoom){
-	iconElemsRoom.querySelectorAll("#container-1285-targetEl div").forEach(elem => { 
-		elem.lastChild.src = "",
-		elem.classList.add("fas", iconsArrayRoom[i]),
+	console.log('oof', iconElemsRoom)
+	iconElemsRoom.forEach(elem => { 
+		elem.lastChild.src = "";
+		elem.classList.add("fas", iconsArrayRoom[i]);
 		elem.classList.remove("location-attribute-icon")
 	});
 }

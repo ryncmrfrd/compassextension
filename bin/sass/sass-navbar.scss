@@ -1,17 +1,5 @@
-@import "./universal/mixins.scss";
-
-$color-white: #fff;
-$color-black: #000;
-$color-blue: #1287fa;
-$color-darkblue: #162a4c;
-$color-yellow: #ffb400;
-
-$device-width: 100vw;
-$nav-height: 48px;
-
-$nav-default-mp: 10px;
-$nav-default-transition: all 200ms ease;
-$nav-default-fontfamily: Cabin, "Segoe UI", sans-serif;
+@import "./universal/mixins.scss",
+		"./universal/variables.scss";
 
 // ---------- general ----------
 
@@ -20,24 +8,23 @@ $nav-default-fontfamily: Cabin, "Segoe UI", sans-serif;
     top: 0 !important;
     left: 0 !important;
 
-    width: $device-width !important;
-    height: $nav-height !important;
+    width: 100vw !important;
+    height: 48px !important;
 
     background: $color-blue !important;
     box-shadow: none !important;
 	-webkit-box-shadow: none !important;
-	
-	font-family: $nav-default-fontfamily !important;
 
 	z-index: 999 !important;
 
 	#mnuMenuContainer{
-		height: $nav-height !important;
+		height: 48px !important;
 
 		// ---------- icon buttons ----------
-		> ul > li{
-			height: $nav-height + $nav-default-mp !important;
-			width: $nav-height !important;
+		> ul#mnu_left > li,
+		> ul#mnu_right > li:nth-of-type(2){
+			height: 58px !important;
+			width: 48px !important;
 
 			> a{
 				width: 34px !important;
@@ -55,7 +42,7 @@ $nav-default-fontfamily: Cabin, "Segoe UI", sans-serif;
 
 		// ---------- dropdowns ----------
 		> ul > li.clickable > ul{
-			top: $nav-height + $nav-default-mp !important;
+			top: 48px !important;
 
 			border: none !important;
 			border-radius: 5px !important;
@@ -95,96 +82,39 @@ $nav-default-fontfamily: Cabin, "Segoe UI", sans-serif;
 					@include typograpy-subtitle;
 
 					padding-left: 15px;
-					padding-bottom: 5px;
+					padding-bottom: 2px;
 				}
 
-				&.mnuHead + li:not(.mnuSubHead),
-				&.mnuHead + li.mnuSubHead + li,
-				&.mnuSubHead + li:not(.mnuSubHead){
-					margin-top: 10px !important;
-					border-top: 1px solid #d3d3d3 !important;
-				}
-
-				&:not(.mnuHead):not(.mnuSubHead):hover,
-				&:not(.mnuHead):not(.mnuSubHead):hover > a{
-					color: $color-black;
-					background: #f4f6f8;
+				&:not(.mnuHead):not(.mnuSubHead){
+					@include typograpy-link;
 				}
 			}
 
 			li:not(.mnuHead):not(.mnuSubHead) + li.mnuSubHead{
-				margin-top: 15px !important;
+				margin-top: 10px !important;
 			}
 
-			li:not(.mnuHead):not(.mnuSubHead){
-				@include typograpy-paragraph;
+			li.mnuHead + li.mnuSubHead + li:not(.mnuHead):not(.mnuSubHead),
+			li.mnuHead + li:not(.mnuHead):not(.mnuSubHead),
+			li.mnuSubHead + li:not(.mnuHead):not(.mnuSubHead){
+				margin-top: 5px !important;
 			}
 		}
 
 		// ---------- user button ----------
 		> ul#mnu_right > li:first-child{
-			height: $nav-height / 2 !important;
-			width: auto !important;
-		
-			padding: 2px !important;
-			margin: $nav-default-mp 5px !important;
+			@include button-accent(true);
 
-			border: none !important;
-			border-radius: 20px !important;
-		
-			background: $color-yellow !important;
-					
-			transition: $nav-default-transition !important;
-		
-			> a{
-				height: $nav-height / 2 !important;
-				width: auto !important;
-		
-				padding: 0 !important;
-
-				> span{ 
-					color: $color-darkblue !important;
-
-					&:nth-of-type(2),
-					&:nth-of-type(3){
-						height: $nav-height / 3 !important;
-					}
-				
-					&:nth-of-type(2){
-						font-size: 1.25em !important;
-				
-						margin: 5px 5px 3px 10px !important;
-					}
-				
-					&:nth-of-type(3){
-						margin: 4px 7.5px 4px 0 !important;
-					}
-				}
-
-			}
-		
-			&:hover{
-				color: $color-white !important;
-				background: $color-darkblue !important;
-
-				&:hover > a{ 
-					box-shadow: none !important;
-
-					> span{ 
-						color: $color-white !important;
-					}
-				}
-			}
-
+			margin: 10px 5px !important;
 		}
 	}
 
 	// ---------- search bar ----------
 	#ctl00_MenuBlob1_pnlSearch > input{
-		height: $nav-height / 2 !important;
+		height: 24px !important;
 	
-		padding-left: $nav-default-mp !important;
-		margin-top: $nav-default-mp !important;
+		padding-left: 10px !important;
+		margin-top: 10px !important;
 	
 		border: none !important;
 		border-radius: 20px !important;
@@ -193,24 +123,22 @@ $nav-default-fontfamily: Cabin, "Segoe UI", sans-serif;
 
 // ---------- search autosuggest ----------
 .autosuggest{
-	top: $nav-height + $nav-default-mp !important;
+	top: 58px !important;
 
 	border: none !important;
 	border-radius: 5px !important;
 
 	overflow: hidden !important;
 
-	font-family: $nav-default-fontfamily !important;
-
 	background: $color-white !important;
 	box-shadow: 0 4px 8px 0 #00000071 !important;
 
 	// autosuggest element
 	> .as_ul{
-		margin: $nav-default-mp 0px !important;
+		margin: 10px 0px !important;
 
 		> li{
-			padding: 2px $nav-default-mp !important;
+			padding: 2px 10px !important;
 		}
 
 		> li.as_highlight{

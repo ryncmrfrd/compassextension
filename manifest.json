@@ -19,7 +19,7 @@
 
 		{
 			"matches": ["https://*.compass.education/"],
-			"css": ["./bin/css/home.css"],
+			"css": ["./bin/sass/sass-home.css"],
 			"js":  ["./bin/js/home.js"]
 		},
 

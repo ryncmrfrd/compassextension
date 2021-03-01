@@ -1,0 +1,72 @@
+@import "./universal/mixins.scss";
+
+#c_bar{
+ 	border: none !important;
+
+	 &, #calendarsideview-1010, #calendarmanagerwidget-1013{
+		margin-top: 16px !important;
+	}
+
+	// my tasks card
+	.home-mytasks{
+		display: none;
+	}
+
+	//top news bar
+	#container-1086{
+		height: 93px !important;
+
+		#component-1089,
+		#component-1089 > img{
+			height: 93px !important;
+		}
+
+		#ext-comp-1083{
+			padding-top: 3px;
+
+			&, *{
+				height: 28px;
+			}
+
+			h5{
+				@include typograpy-title
+			}
+		}		
+	}
+
+	// news feed items
+	.newsfeed-priorityNewsItems, .newsfeed-newsItems{
+		.newsfeed-newsItem{
+			.newsfeed-newsItem-profilePhotoContainer img{
+				border-radius: 50%;
+			}
+
+			.newsfeed-newsItem-titleBar{
+				@include typograpy-subtitle;
+
+				&, * {
+					font-weight: normal !important
+				}
+			}
+
+			.newsfeed-newsItem-textContent{
+				@include typograpy-paragraph;
+			}
+
+			.newsfeed-newsItem-attachments a{
+				@include typograpy-url;
+			}
+		}
+	}
+
+	// show more button
+
+	#panel-1072-body{
+		border: none !important;
+
+		#panel-1072-innerCt{
+			@include button-accent;
+		}
+	}
+
+}

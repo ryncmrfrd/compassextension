@@ -36,8 +36,10 @@ if(lookingAheadElem){
 }
 
 //change bg colour of "my news" title
-let myNewsElem = document.querySelector("#ext-comp-1083");
+let myNewsElems = document.querySelectorAll("#ext-comp-1083, #ext-comp-1083 *");
 
-if(myNewsElem){
-	myNewsElem.setAttribute('style', 'background-color: rgb(255, 255, 255) !important');
+if(myNewsElems){
+	myNewsElems.forEach(elem => {
+		elem.setAttribute('style', 'background-color: rgb(255, 255, 255) !important; border: none !important');
+	});
 }

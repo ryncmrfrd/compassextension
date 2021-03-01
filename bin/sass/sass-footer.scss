@@ -1,7 +1,9 @@
+@import "./universal/variables.scss";
+
 // ---------- general ----------
 
 body{
-	background: white !important;
+	background: $color-white !important;
 
     #c_ftr{
         position: relative !important;

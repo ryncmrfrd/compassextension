@@ -1,58 +1,54 @@
-// useful variables
-
-$color-darkblue: #162a4c;
-$color-darkgrey: #4e4e4e;
-$color-black: #000;
-
-
-$fontfamily-default: Cabin, "Segoe UI", sans-serif;
-$fontsize-title: 2rem;
-$fontsize-subtitle: 1.5rem;
-$fontsize-paragraph: 1rem;
-
-$default-transition: all 200s ease;
+@import "./variables.scss";
 
 // css reset helpers
 
 @mixin typography-reset {
     margin: 0;
     padding: 0;
-
 	outline: 0;
 	border: 0;
-
     text-align: left;
-
-    font-family: $fontfamily-default;
     font-size: initial;
-    font-weight: inherit;
 }
 
 // typography helpers
 
 @mixin typograpy-title {
     @include typography-reset;
-
     color: $color-darkblue !important;
-
+	font-family: $fontfamily-title;
     font-size: $fontsize-title !important;
     font-weight: bold !important;
 }
 
 @mixin typograpy-subtitle {
     @include typography-reset;
-
     color: $color-darkgrey !important;
-
+	font-family: $fontfamily-title;
     font-size: $fontsize-subtitle !important;
+    font-weight: normal !important;
+}
+
+@mixin typograpy-link {
+    @include typography-reset;
+    color: $color-black !important;
+	font-family: $fontfamily-title;
+    font-size: $fontsize-link !important;
     font-weight: normal !important;
 }
 
 @mixin typograpy-paragraph {
     @include typography-reset;
-
     color: $color-black !important;
+	font-family: $fontfamily-paragraph;
+    font-size: $fontsize-paragraph !important;
+    font-weight: normal !important;
+}
 
+@mixin typograpy-url {
+    @include typography-reset;
+    color: $color-urlblue !important;
+	font-family: $fontfamily-paragraph;
     font-size: $fontsize-paragraph !important;
     font-weight: normal !important;
 }
@@ -60,58 +56,54 @@ $default-transition: all 200s ease;
 // accent button helper
 
 @mixin button-accent($has-icon: false) {
+	@include typograpy-link;
     height: 24px !important;
-    width: auto !important;
-
     padding: 2px !important;
-
     border: none !important;
     border-radius: 20px !important;
+    background-color: $color-yellow !important;
+	transition: $default-transition !important;
 
-    background: $color-yellow !important;
-            
-    transition: $default-transition !important;
+	&, *{
+		text-align: center;
+	}
+
+	a{
+		height: 14px !important;
+
+		@if $has-icon == true{
+			padding: 1px 0px 0px 0px !important;
+
+			> span{ 
+
+				&:nth-of-type(2),
+				&:nth-of-type(3){
+					height: 14px !important;
+				}
+			
+				&:nth-of-type(2){
+					margin: 0 2.5px 0 10px !important;
+				}
+			
+				&:nth-of-type(3){
+					margin: 0 7.5px 0 0 !important;
+				}
+			}
+		} @else{
+			padding: 3px !important;
+		}
+
+		color: $color-darkblue !important;
+		transition: $default-transition !important;
+	}
 
     &:hover{
-        color: red !important;
-        background: $color-darkblue !important;
-        // > a{
-        //     box-shadow: none !important;
+        background-color: $color-darkblue !important;
 
-        //     @if $has-icon == true{
-        //         > span{ 
-        //             color: $color-white !important;
-        //         }
-        //     }
-        // }
+		a{
+			color: $color-white !important;
+			background-color: transparent !important; 
+			box-shadow: none !important;
+		}
     }
-
-    // > a{
-    //     height: 100% !important;
-    //     width: 100% !important;
-
-    //     padding: 0 !important;
-    //     margin: 0 !important;
-
-    //     @if $has-icon == true{
-    //         > span{ 
-    //             color: $color-darkblue !important;
-    
-    //             &:nth-of-type(2),
-    //             &:nth-of-type(3){
-    //                 height: 16px !important;
-    //             }
-            
-    //             &:nth-of-type(2){
-    //                 font-size: 1.25em !important;
-            
-    //                 margin: 5px 5px 3px 10px !important;
-    //             }
-            
-    //             &:nth-of-type(3){
-    //                 margin: 4px 7.5px 4px 0 !important;
-    //             }
-    //         }
-    //     }
-    // }
 }
