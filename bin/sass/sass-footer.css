@@ -1,0 +1,8 @@
+body {
+  background: white !important;
+}
+
+body #c_ftr {
+  position: relative !important;
+  margin-bottom: 15px !important;
+}

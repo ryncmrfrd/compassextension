@@ -1,6 +1,6 @@
 {
 	"manifest_version": 3,
-    "name": "Compass Education Redesign.",
+    "name": "Compass Education Redesign",
 	"short_name": "Compass",
 	"description": "Injected CSS code for compass.education. Very much a work in progress.",
 	"homepage_url": "http://github.com/ryncmrfrd/compass",
@@ -11,8 +11,8 @@
 			"matches": ["https://*.compass.education/*"],
 			"css": [
 				"./icons/css/all.css",
-				"./bin/css/navbartest.css",
-				"./bin/css/footer.css"
+				"./bin/sass/sass-navbar.css",
+				"./bin/sass/sass-footer.css"
 			],
 			"js":  ["./bin/js/navbar.js"]
 		},

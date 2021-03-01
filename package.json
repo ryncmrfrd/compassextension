@@ -1,0 +1,20 @@
+{
+  "name": "compassredesign",
+  "version": "1.0.0",
+  "description": "Injected CSS code for compass.education. Very much a work in progress.",
+  "main": "manifest.json",
+  "scripts": {
+    "sass": "node-sass -w bin/sass -o bin/sass"
+    
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/ryncmrfrd/compass"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryncmrfrd/compass/issues"
+  },
+  "homepage": "https://github.com/ryncmrfrd/compass#readme"
+}

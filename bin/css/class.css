@@ -62,7 +62,7 @@
 	height: 40px !important;
 	width: 40px !important;
 
-	z-index: 999 !important;
+	z-index: 998 !important;
 
 	border: none !important;
 	border-radius: 50% !important;
@@ -96,49 +96,3 @@
 
 	font-size: 1.5em !important;
 }
-/* 
-
-#container-1059{
-	left: 0 !important;
-	width: 958px !important;
-
-	overflow: visible !important;
-}
-
-#container-1059 #container-1059-targetEl > div,
-#container-1059 #container-1059-targetEl > div #container-1034-innerCt,
-#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl{ 
-	overflow: visible !important;
- }
-
-#container-1059 #container-1059-innerCt,
-#container-1059 #container-1059-targetEl, 
-#container-1059 #container-1059-targetEl > div,
-#container-1059 #container-1059-targetEl > div #container-1034-innerCt,
-#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl{ width: 100% !important }
-#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel{ 
-	width: calc(50% - 20px) !important;
-
-	border-radius: 5px !important;
-
-	box-shadow: 0 4px 8px 0 #00000071 !important;
-}
-#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel:nth-of-type(1){ left: 10px !important }
-#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel:nth-of-type(2){ left: calc(50% + 10px) !important }
-#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel > div,
-#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel > div > div,
-#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel > div > div > div,
-#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel > div > div > div > div,
-#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel > div > div > div > div > div,
-#container-1059 #container-1059-targetEl > div #container-1034-innerCt #container-1034-targetEl .x-panel > div > div > div > div > div > div{ width: 100% !important; border: none !important; outline: none !important }
-
-#container-1272-innerCt > img{
-	border-radius: 5px !important;
-
-	height: 55px !important;
-	width: 43px !important
-}
-
-#container-1280-innerCt > div span{
-	margin-left: auto !important
-} */
