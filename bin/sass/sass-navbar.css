@@ -60,6 +60,7 @@
   border-radius: 20px !important;
   background-color: #ffb400 !important;
   transition: all 0.2s ease !important;
+  cursor: pointer;
   padding: 2px !important;
   margin: 10px 15px 5px 15px !important; }
 
@@ -79,6 +80,9 @@
   color: #fff !important;
   background-color: transparent !important;
   box-shadow: none !important; }
+
+#productNavBar #mnuMenuContainer > ul > li.clickable > ul.mnuMenuRight > li:last-child a:hover {
+  text-decoration: none; }
 
 #productNavBar #mnuMenuContainer > ul > li.clickable > ul > li.mnuHead {
   margin: 0;
@@ -144,6 +148,7 @@
   border-radius: 20px !important;
   background-color: #ffb400 !important;
   transition: all 0.2s ease !important;
+  cursor: pointer;
   margin: 10px 5px !important; }
 
 #productNavBar #mnuMenuContainer > ul#mnu_right > li:first-child, #productNavBar #mnuMenuContainer > ul#mnu_right > li:first-child * {
@@ -151,7 +156,7 @@
 
 #productNavBar #mnuMenuContainer > ul#mnu_right > li:first-child a {
   height: 14px !important;
-  padding: 1px 0px 0px 0px !important;
+  padding: 3px 0px 0px 0px !important;
   color: #162a4c !important;
   transition: all 0.2s ease !important; }
 
@@ -171,6 +176,9 @@
   color: #fff !important;
   background-color: transparent !important;
   box-shadow: none !important; }
+
+#productNavBar #mnuMenuContainer > ul#mnu_right > li:first-child a:hover {
+  text-decoration: none; }
 
 #productNavBar #ctl00_MenuBlob1_pnlSearch > input {
   height: 24px !important;

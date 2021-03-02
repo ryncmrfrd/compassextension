@@ -63,6 +63,7 @@
     border-radius: 20px !important;
     background-color: $color-yellow !important;
 	transition: $default-transition !important;
+	cursor: pointer;
 
 	&, *{
 		text-align: center;
@@ -72,7 +73,7 @@
 		height: 14px !important;
 
 		@if $has-icon == true{
-			padding: 1px 0px 0px 0px !important;
+			padding: 3px 0px 0px 0px !important;
 
 			> span{ 
 
@@ -106,4 +107,8 @@
 			box-shadow: none !important;
 		}
     }
+
+	a:hover{
+		text-decoration: none;
+	}
 }

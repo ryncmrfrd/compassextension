@@ -1,0 +1,22 @@
+@import "../../../icons/css/all.css";
+
+@mixin font-awesome($content){
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+
+	font-family: FontAwesome;
+    font-style: normal;
+    font-variant: normal;
+    font-style: normal;
+	font-weight: normal;
+
+    text-rendering: auto;
+    line-height: 1;
+
+    &:after{content: '#{$content}';}
+}
+
+@mixin fa($content){
+	@include font_awesome($content);
+}

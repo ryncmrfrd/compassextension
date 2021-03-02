@@ -20,7 +20,8 @@
 		{
 			"matches": ["https://*.compass.education/"],
 			"css": ["./bin/sass/sass-home.css"],
-			"js":  ["./bin/js/home.js"]
+			"js":  ["./bin/js/home.js"],
+			"run_at": "document_idle"
 		},
 
 		{

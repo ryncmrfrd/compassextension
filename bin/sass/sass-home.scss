@@ -1,4 +1,5 @@
-@import "./universal/mixins.scss";
+@import "./universal/mixins.scss",
+		"./universal/variables.scss";
 
 #c_bar{
  	border: none !important;
@@ -34,38 +35,59 @@
 		}		
 	}
 
-	// news feed items
-	.newsfeed-priorityNewsItems, .newsfeed-newsItems{
-		.newsfeed-newsItem{
-			.newsfeed-newsItem-profilePhotoContainer img{
-				border-radius: 50%;
-			}
+	// news wrapper
+	#ext-comp-1068{
 
-			.newsfeed-newsItem-titleBar{
-				@include typograpy-subtitle;
+		// news feed items
+		.newsfeed-priorityNewsItems, .newsfeed-newsItems{
+			.newsfeed-newsItem{
+				.newsfeed-newsItem-profilePhotoContainer img{
+					border-radius: 50%;
+				}
 
-				&, * {
-					font-weight: normal !important
+				.newsfeed-newsItem-titleBar{
+					@include typograpy-subtitle;
+
+					&, * {
+						font-weight: normal !important
+					}
+				}
+
+				.newsfeed-newsItem-textContent{
+					@include typograpy-paragraph;
+				}
+
+				.newsfeed-newsItem-attachments{
+					img{
+						position: relative;
+						color: $color-darkgrey;
+
+						&:before{
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%,-50%) !important;
+						}
+
+						&::part(span){
+							opacity: 0 !important;
+						}
+					}
+					a{
+						@include typograpy-url;
+					}
 				}
 			}
-
-			.newsfeed-newsItem-textContent{
-				@include typograpy-paragraph;
-			}
-
-			.newsfeed-newsItem-attachments a{
-				@include typograpy-url;
-			}
 		}
-	}
 
-	// show more button
+		// show more button
 
-	#panel-1072-body{
-		border: none !important;
+		#panel-1072-body{
+			border: none !important;
 
-		#panel-1072-innerCt{
-			@include button-accent;
+			#panel-1072-innerCt{
+				@include button-accent;
+			}
 		}
 	}
 
