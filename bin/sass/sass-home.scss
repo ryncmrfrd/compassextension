@@ -8,9 +8,109 @@
 		margin-top: 16px !important;
 	}
 
+	//calendar
+	.compass-day-calendar{
+		#toolbar-1014 { /* top bar */
+			@include typograpy-paragraph;
+
+			padding-left: 0px !important;
+		
+			color: $color-white !important;
+			background: $color-blue !important;
+		
+			border:none;
+			border-radius: 10px 10px 0px 0px !important;
+		}
+		
+		#calendardaywidget-1013-tb-prev{ margin-left: 5px; } /* prev/next buttons */
+		#calendardaywidget-1013-tb-next{ margin-right: 5px; }
+
+		#calendardaywidget-1013-tb-prev, #calendardaywidget-1013-tb-next{
+			height: 20px;
+			width: 20px;
+		
+			margin-top: 2px;
+			border-radius: 50%;
+		
+			cursor: pointer;
+		
+			color: $color-darkblue;
+			background: transparent;
+
+			*{
+				transition: $default-transition;
+			}
+
+			:hover{
+				color: $color-white !important;
+			}
+		}
+		
+		#calendardaywidget-1013-tb-prev > span > span{ width: 7.5px; } /* prev/next icons (chevrons) */
+		#calendardaywidget-1013-tb-next > span > span{ width: 4px; }
+		#calendardaywidget-1013-tb-prev > span > span, 
+		#calendardaywidget-1013-tb-next > span > span{
+			position: absolute !important;
+			top: 50% !important;
+			left: 50% !important;
+			transform: translate(-50% , -50%) !important;
+		}
+
+		// calendar body
+		#calendardaywidget-1013-body {
+			border-radius: 0px 0px 10px 10px !important;
+		
+			overflow: show;
+		}
+	}
+
 	// my tasks card
 	.home-mytasks{
 		display: none;
+	}
+
+	// looking ahead
+	.home-lookingAhead{
+		#toolbar-1065{
+			color: $color-white !important;
+			background: $color-blue !important;
+	
+			border-radius: 10px 10px 0px 0px !important;
+		}
+
+		#label-1066{
+			padding-left: ((395px - 87px) / 2) - 1px;
+
+			h5{
+				@include typograpy-paragraph;
+
+				color: $color-white !important;
+			
+				background-color: transparent;
+				border: none;
+			}
+		}
+
+		#ext-comp-1236{
+			padding: 0px !important;
+		}
+
+		#ext-comp-1052{
+			border: 1px solid $color-midgrey;
+			border-top: none;
+			margin: 0px !important;
+		
+			border-radius: 0px 0px 10px 10px !important;
+
+			// item text wrapper
+			> span div.newsfeed-alertItem{
+				background-color: transparent !important;
+			}
+		}
+
+		#ext-comp-1095{
+			padding: 0px 0px 13px 0px !important;
+		}
 	}
 
 	//top news bar
@@ -77,6 +177,29 @@
 						@include typograpy-url;
 					}
 				}
+
+				
+				.newsfeed-newsItem-seeMoreCTA{
+					@include button-accent;
+
+					font-size: 11px !important;
+
+					padding: 2px 5px !important;
+
+					height: 19px !important;
+
+					left: auto !important;
+					right: 0 !important;
+
+					a{
+						height: 14px !important;
+					}
+				}
+
+				.newsfeed-newsItem-whenAndWhoContainer{
+					left: 0 !important;
+					right: auto !important;
+				}
 			}
 		}
 
@@ -90,5 +213,4 @@
 			}
 		}
 	}
-
 }
